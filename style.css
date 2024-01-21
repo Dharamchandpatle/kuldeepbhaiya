@@ -1,0 +1,453 @@
+:root{
+    --font-color: #fff;
+    --section-bg-color: linear-gradient(180deg, #f2f6f9 10%, #fff 100%);
+    --font-para-color:#437099;
+    --main-heading-color:#2c4964;
+    --font-family:"Playfair Display", serif;  
+    /* --hover-color:#d43076;   */
+    --hover-color:orange;  
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+ 
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    color: #5a656e;
+    
+}
+.section1{
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    position:relative;
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+
+    background-image: url(https://bootstrapmade.com/demo/templates/Lonely/assets/img/hero-bg.jpg);
+    width: 100%;
+    height: 75vh;
+    
+  }
+  .div-section1{
+    color: var(--font-color);
+   
+    >h1{
+        font-size: 50;
+    font-family: var(--font-family);
+
+    }
+    >h2{
+        font-size: 20;
+        margin: 2rem;
+    }
+  }
+
+/*   
+  .main {
+    width: 120%;
+    height: 100%;
+    padding: 0 10rem;
+  } */
+
+  /* ........................... header ....................  */
+  
+  a {
+    text-decoration: none;
+    color: var(--heading-color);
+    font-size: 17;
+  }
+  li {
+    list-style-type: none;
+  }
+  a:hover{
+    color: var(--hover-color);
+  }
+  .header{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+    padding: 0 2rem 0 3rem;
+    background:  var(--font-color);
+  
+  }
+  .header-position{
+    
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    /* padding: 2rem; */
+    padding-left: 0px;
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .menu ul li {
+    font-size: var(--paragraph-font);
+    font-weight: 600;
+    color: var(--heading-color);
+  }
+
+  /* ........................ about section ..........................  */
+   
+  .about-left img{
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+    
+
+  }
+  .about-left-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    background: var(--section-bg-color);
+
+
+  }
+
+  .about-right{
+    margin-left:2rem ;
+    >h2{
+        font-size: 37;
+        color:var(--main-heading-color) ;
+        font-family: var(--font-family);
+    }
+    >p{
+        font-size: 20;
+        /* color: var(--font-para-color); */
+    }
+  }
+  .about-box-left-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .abount-box-left1{
+    >h3{
+        font-size: 40;
+        color:var(--main-heading-color) ;
+
+    }
+    >p{
+        color: var(--font-para-color);
+    }
+    >i{
+      color: var(--hover-color);
+      font-size: 30;
+    }
+  }
+
+  /* .................................. Skill Section ........................  */
+
+
+  /* ......... universal section line Start...................  */
+  .section-line{
+    background: var(--section-bg-color);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+
+    >h2{
+        font-size: 30;
+        color: var(--main-heading-color);
+        font-family: var(--font-family);
+        font-weight: bold;
+        position: relative;
+       
+    }
+    >h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background:var(--hover-color);
+        bottom: 0;
+        left: 0;
+    }
+    
+  }
+ 
+  /* ......... universal section line End ...................  */
+
+  .w3-light-grey{
+    >h4{
+        text-transform: uppercase;
+        font-size: 15;
+        color: #5a656e;
+        font-weight: bold;
+    }
+  }
+  .w3-container{
+    height: 0.5rem;
+    border-radius:5%;
+    font-size: 10;
+
+  }
+
+  /* .................................. Resume Section ........................  */
+
+
+  .resume-left-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+  }
+
+  .resume-left{
+    height: 100%;
+    width: 100%;
+    
+  }
+  .resume-border{
+    border-left: 2px solid var(--hover-color);
+    position: relative;
+    padding: 1rem;
+    >h4{
+        color: var(--main-heading-color);
+        font-family: var(--font-family);
+        font-weight: bold;
+    }
+
+  }
+  .resume-border::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid var(--hover-color);
+}
+  .resume-left h3{
+    
+        color: var(--font-para-color);
+        font-size: 30;
+        font-weight: bold;
+        font-family: var(--font-family);
+    
+  }
+
+  .resume-right{
+    height: 100%;
+    width: 100%;
+  }
+
+  .resume h3{
+    
+    color: var(--font-para-color);
+    font-size: 30;
+    font-weight: bold;
+    font-family: var(--font-family);
+
+}
+
+/* .......................... Services section .................  */
+
+.service-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sevice-box1{
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    margin: 0.8rem;
+    >i{
+        color: var(--hover-color);
+        font-size: 50;
+        margin: 2rem;
+    }
+    >h2{
+        color: black;
+        font-family: var(--font-family);
+        font-size: 24;
+        font-weight: bold;
+    }
+  
+
+}
+.sevice-box1:hover{
+  box-shadow: 0 0 20px 0 var(--hover-color);
+
+}
+
+/* <!-- ...................................... Portfolio Section .......................  --> */
+
+
+
+.portfolio-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+    border-radius: 55px;
+    width: 30%;
+}
+.portfolio1{
+    text-transform: uppercase;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-weight: bold;
+
+}
+.portfolio1:hover{
+    color: var(--hover-color);
+}
+
+.portfolio-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.portfolio-img1 img{
+    height: 100%;
+    width: 100%;
+    padding: 1.2rem;
+}
+
+/* ................................ Contact section ..............................  */
+
+.contact-left-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-left{
+    height: 100%;
+    width: 100%;
+    padding-left: 0.8rem;
+    
+}
+.contact-right{
+    height: 100%;
+    width: 50%;
+
+
+}
+.contact-right .form input{
+   width: 28rem;
+   height: 2rem;
+
+   
+}
+
+.contact-left1-right1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact-left1{
+    height: 100%;
+    width: 100%;
+    >h1{
+        color: var(--hover-color);
+    }
+
+
+
+}
+
+.contact-left2{
+    height: 100%;
+    width: 100%;
+    padding-left: 0.8rem;
+   >h3{
+    font-size: 20;
+    >i{
+        color: var(--hover-color);
+       }
+   }
+   
+}
+.contact-icon{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.icon i{
+    padding: 1rem;
+    color: var(--hover-color);
+    font-size: 25;
+}
+.contact-right .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem 1rem 0.2rem 1rem ;
+    color: var(--font-color);
+    background-color: var(--hover-color);
+    border-radius: 5rem;
+}
+
+.btn:hover{
+  box-shadow: 0 0 20px 0 var(--hover-color);
+
+}
+/* .................................. Footer Section ........................  */
+
+.footer-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.12);
+}
+.footer{
+  padding: 2rem;
+  >h4{
+    font-size: 15;
+
+}>a{
+  color: var(--main-heading-color);
+}
+>p{
+  font-size: 15;
+  >a{
+    color: var(--hover-color);
+  }
+}
+}
